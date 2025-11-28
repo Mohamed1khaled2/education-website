@@ -5,7 +5,7 @@ import { FaImages, FaCreditCard } from "react-icons/fa";
 export const cardData = [
   {
     id: 1,
-    img: <CiMap />,
+    img: CiMap,                  // ✅ صح
     title: "Book Library",
     description:
       "The gradual accumulation of information about atomic and small-scale behavior...",
@@ -14,7 +14,7 @@ export const cardData = [
   },
   {
     id: 2,
-    img: <FaImages />,
+    img: FaImages,              // ✅ صح
     title: "Market Analysis",
     description:
       "The gradual accumulation of information about atomic and small-scale behavior...",
@@ -23,7 +23,7 @@ export const cardData = [
   },
   {
     id: 3,
-    img: <FaCreditCard />,
+    img: FaCreditCard,         // ✅ صح
     title: "Book Lib",
     description:
       "The gradual accumulation of information about atomic and small-scale behavior...",

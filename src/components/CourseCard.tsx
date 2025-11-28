@@ -32,7 +32,9 @@ function CourseCard({
   minutes: number;
   lessons: number;
 }) {
-  const finalPrice = isSale ? price - price * (percentageOfSale / 100) : price;
+  const percentage = percentageOfSale ?? 0; // لو undefined يخليها 0
+
+  const finalPrice = isSale ? price - price * (percentage / 100) : price;
   return (
     <div className="bg-gray-100">
       <div className="relative w-full h-48 sale-before">
