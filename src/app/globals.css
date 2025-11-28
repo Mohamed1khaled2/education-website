@@ -85,4 +85,8 @@ body {
     @apply before:content-['Sale'] before:text-white before:bg-red-400 before:absolute before:px-4 before:font-bold before:py-0.5 before:top-2 before:z-10 before:left-2 before:rounded-lg
 
   }
+
+  .footer-title {
+    @apply text-3xl font-bold mb-5
+  }
 }

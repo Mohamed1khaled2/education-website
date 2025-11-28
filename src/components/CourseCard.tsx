@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { MdOutlineAccessAlarm } from "react-icons/md";

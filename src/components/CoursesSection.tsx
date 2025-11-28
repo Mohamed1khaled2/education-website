@@ -14,15 +14,25 @@ function CoursesSection() {
 "
         />
 
-<div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-10 mt-5">
-          {
-           CourseData.map((course)=> 
-          
-          
-            <CourseCard key={course.id} srcImage={course.srcImage} isSale={course.isSale} price={course.price} nameCourse={course.nameCourse} descriptionCourse={course.descriptionCourse} countOfSales={course.countOfSales} typeCourse={course.typeCourse} percentageOfSale={course.percentageOfSale} stars={course.starts} lessons={course.lessons} hours={course.hours} minutes={course.minutes}/>
-          
-          )
-        }</div>
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-10 mt-5">
+          {CourseData.map((course) => (
+            <CourseCard
+              key={course.id}
+              srcImage={course.srcImage}
+              isSale={course.isSale}
+              price={course.price}
+              nameCourse={course.nameCourse}
+              descriptionCourse={course.descriptionCourse}
+              countOfSales={course.countOfSales}
+              typeCourse={course.typeCourse}
+              percentageOfSale={course.percentageOfSale}
+              stars={course.starts}
+              lessons={course.lessons}
+              hours={course.hours}
+              minutes={course.minutes}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
