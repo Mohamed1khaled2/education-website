@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className="app-container flex justify-between items-center">
+        <footer className="app-container mx-auto grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))]">
       <div>
         <h2 className="footer-title">Get in Touch</h2>
         <address>Ain Shams, Cairo, Egypt</address>
